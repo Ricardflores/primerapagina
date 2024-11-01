@@ -25,11 +25,11 @@
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e( 'Skip to content', 'primerapagina' ); ?></a>
 
-	<header id="masthead" class="site-header">
+	<header id="masthead" class="site-header" style="background-color:#232323;">
 
 		<div class="container-fluid">
 			<div class="row">
-				<div class="site-branding col-md-6 bg-primary">
+				<div class="site-branding col-md-6">
 					
 					<?php
 					the_custom_logo();
@@ -39,7 +39,7 @@
 						<?php
 					else :
 						?>
-						<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
+						<p  class="site-title"> <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
 						<?php
 					endif;
 					$primerapagina_description = get_bloginfo( 'description', 'display' );
@@ -51,7 +51,7 @@
 					?>
 
 				</div><!--site branding-->
-				<nav id="site-navigation" class="main-navigation col-md-6 bg-danger">
+				<nav id="site-navigation" class="main-navigation col-md-6">
 					<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'primerapagina' ); ?></button>
 					<?php
 					wp_nav_menu(
