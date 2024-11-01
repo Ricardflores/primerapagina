@@ -29,7 +29,7 @@
 
 		<div class="container-fluid">
 			<div class="row">
-				<div class="site-branding col-md-6">
+				<div class="site-branding col-md-5">
 					
 					<?php
 					the_custom_logo();
@@ -51,7 +51,7 @@
 					?>
 
 				</div><!--site branding-->
-				<nav id="site-navigation" class="main-navigation col-md-6">
+				<nav id="site-navigation" class="main-navigation col-md-7">
 					<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'primerapagina' ); ?></button>
 					<?php
 					wp_nav_menu(
