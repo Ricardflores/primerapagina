@@ -15,6 +15,7 @@
 get_header();
 ?>
 
+	<div id="primary" class="content-area .col-sm-6 col-md-8">
 	<main id="primary" class="site-main">
 
 		<?php
@@ -33,6 +34,11 @@ get_header();
 
 	</main><!-- #main -->
 
+	<div class="col-sm-6 col-md-4">
+		<?php get_sidebar(); 
+		
+		?>
+
+	</div>
 <?php
-get_sidebar();
 get_footer();

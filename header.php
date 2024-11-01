@@ -27,9 +27,9 @@
 
 	<header id="masthead" class="site-header">
 
-		<div class="container">
+		<div class="container-fluid">
 			<div class="row">
-				<div class="site-branding col-md-4 bg-primary">
+				<div class="site-branding col-md-6 bg-primary">
 					
 					<?php
 					the_custom_logo();
@@ -51,7 +51,7 @@
 					?>
 
 				</div><!--site branding-->
-				<nav id="site-navigation" class="main-navigation col-md-8 bg-danger">
+				<nav id="site-navigation" class="main-navigation col-md-6 bg-danger">
 					<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'primerapagina' ); ?></button>
 					<?php
 					wp_nav_menu(
@@ -66,3 +66,6 @@
 		</div><!--container-fluid -->
 		
 	</header><!-- #masthead -->
+
+	<div id="content" class="site-content container">
+	<div class="row">
