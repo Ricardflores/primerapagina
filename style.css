@@ -709,6 +709,20 @@ textarea {
 	height: 100px;
 }
 
+/*----------menu desplegable-------------*/
+
+ul.sub-menu 
+{
+	background-color: #232323;
+}
+.page_item_has_children ul.children {
+	
+    background-color: #232323;
+}
+a:hover, li:hover > a { 
+	color:#49dccd
+}
+
 /* Small menu. */
 .menu-toggle,
 .main-navigation.toggled ul {
