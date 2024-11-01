@@ -93,10 +93,8 @@ function primerapagina_setup() {
 	add_theme_support(
 		'custom-logo',
 		array(
-			'height'      => 250,
+			'height'      => 100,
 			'width'       => 250,
-			'flex-width'  => true,
-			'flex-height' => true,
 		)
 	);
 }
