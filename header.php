@@ -45,7 +45,7 @@
 					$primerapagina_description = get_bloginfo( 'description', 'display' );
 					if ( $primerapagina_description || is_customize_preview() ) :
 						?>
-						<p class="site-description"><?php echo $primerapagina_description; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></p>
+						<p class="site-description">realizado en wordpress</p> <?php echo $primerapagina_description; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?>
 						<?php
 					endif;
 					?>
