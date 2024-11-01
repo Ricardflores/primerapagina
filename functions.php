@@ -139,14 +139,10 @@ add_action( 'widgets_init', 'primerapagina_widgets_init' );
  */
 function primerapagina_scripts() {
 
+	wp_enqueue_style( 'montserrat_font', 'https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap', array(), _S_VERSION);
 	wp_enqueue_style( 'primerapagina-style', get_stylesheet_uri(), array(), _S_VERSION );
 	wp_enqueue_style( 'bootstrap',get_template_directory_uri(  ) . '/css/bootstrap.min.css', array(), _S_VERSION );
-	/*wp_enqueue_style(
-		'bootstrap',
-		get_template_directory_uri() . 'css/bootstrap.min.css',
-		array(),
-		"5.3.3",
-	);*/
+
 
 
 	wp_style_add_data( 'primerapagina-style', 'rtl', 'replace' );

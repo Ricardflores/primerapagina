@@ -725,14 +725,15 @@ textarea {
 		display: flex;
 	}
 }
+/*-------------------------------------------------------------------------------------------
+/*brandig*/
 
-/*branding*/
 
 .site-branding a {
-
-color:#ccc
+color:#49dccd;
+font-family:'montserrat', sans-serif;
+font-weight: 800;
 }
-
 
 
 .site-main .comment-navigation,

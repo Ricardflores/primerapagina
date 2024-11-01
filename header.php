@@ -22,7 +22,7 @@
 
 <body <?php body_class(); ?>>
 <?php wp_body_open(); ?>
-<div id="page" class="site">
+<div id="page" class="site">|
 	<a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e( 'Skip to content', 'primerapagina' ); ?></a>
 
 	<header id="masthead" class="site-header" style="background-color:#232323;">
@@ -42,12 +42,7 @@
 						<p  class="site-title"> <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
 						<?php
 					endif;
-					$primerapagina_description = get_bloginfo( 'description', 'display' );
-					if ( $primerapagina_description || is_customize_preview() ) :
-						?>
-						<p class="site-description">realizado en wordpress</p> <?php echo $primerapagina_description; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?>
-						<?php
-					endif;
+				
 					?>
 
 				</div><!--site branding-->
