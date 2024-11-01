@@ -647,6 +647,10 @@ textarea {
 
 /* Navigation
 --------------------------------------------- */
+.site-header{
+
+	background-color: #232323;
+} 
 .main-navigation {
 	display: block;
 	width: 100%;
@@ -657,6 +661,7 @@ textarea {
 	list-style: none;
 	margin: 0;
 	padding-left: 0;
+	
 }
 
 .main-navigation ul ul {
@@ -681,6 +686,7 @@ textarea {
 
 .main-navigation ul ul a {
 	width: 200px;
+	
 }
 
 .main-navigation ul li:hover > ul,
@@ -695,6 +701,7 @@ textarea {
 .main-navigation a {
 	display: block;
 	text-decoration: none;
+	color:#fff;
 }
 
 /* Small menu. */
