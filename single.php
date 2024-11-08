@@ -7,7 +7,9 @@
  * @package primerapagina
  */
 
-get_header();  ?>
+		get_header();  
+
+?>
 
 	<div id="primary" class="content-area col-md-8">
 		<main id="primary" class="site-main">

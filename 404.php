@@ -14,10 +14,10 @@ get_header();
 
 		<section class="error-404 not-found">
 			<header class="page-header">
-				<h1 class="page-title"><?php esc_html_e( 'Oops! That page can&rsquo;t be found.', 'primerapagina' ); ?></h1>
+				<h1 class="page-title"><?php esc_html_e( 'Pagina no encontrada', 'primerapagina' ); ?></h1>
 			</header><!-- .page-header -->
 
-				<p><?php esc_html_e( 'It looks like nothing was found at this location. Maybe try one of the links below or a search?', 'primerapagina' ); ?></p>
+				<p><?php esc_html_e( 'Parece que lo que buscas no ha sido encontrado.', 'primerapagina' ); ?></p>
 
 		</section><!-- .error-404 -->
 
