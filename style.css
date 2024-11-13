@@ -719,8 +719,21 @@ ul.sub-menu
 	
     background-color: #232323;
 }
-a:hover, li:hover > a { 
+a:hover, li:hover > a, .current-menu-item > a, .ancestor-menu-item > a  { 
 	color:#49dccd
+}
+
+
+/*---------flecha para indicar hijos---*/
+
+.menu-item-has-children >a::before {
+	content: "";
+	position: absolute;
+	right: 0;
+	top: 50%;
+	transform: translateY(-50%);
+	border: 4px solid transparent;
+	border-top-color: #49dccd;
 }
 
 /* Small menu. */
@@ -739,6 +752,7 @@ a:hover, li:hover > a {
 		display: flex;
 	}
 }
+
 /*-------------------------------------------------------------------------------------------
 /*brandig*/
 
