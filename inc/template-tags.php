@@ -128,7 +128,7 @@ if ( ! function_exists( 'primerapagina_post_thumbnail' ) ) :
 			?>
 
 			<div class="post-thumbnail">
-				<?php the_post_thumbnail(); ?>
+				<?php the_post_thumbnail('image-single'); ?>
 			</div><!-- .post-thumbnail -->
 
 		<?php else : ?>
@@ -136,13 +136,14 @@ if ( ! function_exists( 'primerapagina_post_thumbnail' ) ) :
 			<a class="post-thumbnail" href="<?php the_permalink(); ?>" aria-hidden="true" tabindex="-1">
 				<?php
 					the_post_thumbnail(
-						'post-thumbnail',
+						'image-index',
 						array(
 							'alt' => the_title_attribute(
 								array(
 									'echo' => false,
 								)
 							),
+							'class' => 'rounded'
 						)
 					);
 				?>

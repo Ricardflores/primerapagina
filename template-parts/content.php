@@ -29,8 +29,9 @@
 		<?php endif; ?>
 	</header><!-- .entry-header -->
 
+	
 	<?php primerapagina_post_thumbnail(); ?>
-
+	
 	<div class="entry-content">
 		<?php
 		the_content(

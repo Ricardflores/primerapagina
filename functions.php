@@ -45,8 +45,10 @@ function primerapagina_setup() {
 		* @link https://developer.wordpress.org/themes/functionality/featured-images-post-thumbnails/
 		*/
 	add_theme_support( 'post-thumbnails' );
-
+	add_image_size( 'image-single', 750, 310, true);
+	add_image_size( 'image-index', 750, 310, true);
 	// This theme uses wp_nav_menu() in one location.
+
 	register_nav_menus(
 		array(
 			'menu-1' => esc_html__( 'Primary', 'primerapagina' ),
