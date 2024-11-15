@@ -13,19 +13,44 @@
 	</div> <!--row -->
 	</div><!-- content container--> 
 
-	<footer id="colophon" class="site-footer">
-		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'primerapagina' ) ); ?>">
-				<?php
-				/* translators: %s: CMS name, i.e. WordPress. */
-				printf( esc_html__( 'Proudly powered by %s', 'primerapagina' ), 'WordPress' );
-				?>
-			</a>
-			<span class="sep"> | </span>
-				<?php
-				/* translators: 1: Theme name, 2: Theme author. */
-				printf( esc_html__( 'Theme: %1$s by %2$s.', 'primerapagina' ), 'primerapagina', '<a href="http://underscores.me/">Underscores.me</a>' );
-				?>
+			<footer id="colophon" class="site-footer container-fluid">
+
+					<div class="row">
+						<div class="col-md-4">
+						<div id="Footer 1" class="widget-area">
+							<?php 
+								dynamic_sidebar( 'Footer 1' ); 
+							?>
+						</div>
+						<div id="Footer 2" class="widget-area">
+							<?php 
+								dynamic_sidebar( 'Footer 2' ); 
+							?>
+						</div>
+						<div class="col-md-4">
+							<h4>Hola estoy vacio</h4>
+						</div>
+						<div class="col-md-4">
+							
+						</div>
+
+					</div>    <!-----row-------->
+
+
+
+
+				<div class="site-info">
+					<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'primerapagina' ) ); ?>">
+						<?php
+						/* translators: %s: CMS name, i.e. WordPress. */
+						printf( esc_html__( 'Proudly powered by %s', 'primerapagina' ), 'WordPress' );
+						?>
+					</a>
+					<span class="sep"> | </span>
+						<?php
+						/* translators: 1: Theme name, 2: Theme author. */
+						printf( esc_html__( 'Theme: %1$s by %2$s.', 'primerapagina' ), 'primerapagina', '<a href="http://underscores.me/">Underscores.me</a>' );
+						?>
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
 </div><!-- #page -->
