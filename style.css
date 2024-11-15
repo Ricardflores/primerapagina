@@ -858,14 +858,32 @@ a.btn-leer-mas:hover
 }
 .text-block-img
 {
+	border-radius: 2px 0px 2px 0px;
 	position: absolute;
-	bottom: 20px;
-	right: 20px;
-	background-color: black;
-	color: white;
+	top: 0px;
+	left: 0px;
+	background-color: #49dccd;
+	color: #232323;
 	padding-left: 20px;
 	padding-right: 20px;
   
+}
+
+.text-block-img a 
+{
+	color: #232323;
+	font-weight: bold;
+}
+
+/*---------datos del post, autor, fecha -----------*/
+.entry-meta, .entry-meta a
+{
+	color:#232323
+}
+
+.entry-meta a
+{
+	font-weight: bold;
 }
 /* Comments
 --------------------------------------------- */
@@ -879,6 +897,55 @@ a.btn-leer-mas:hover
 
 /* Widgets
 --------------------------------------------- */
+.widget .widget-title
+{
+	font-size: 1.8em;
+	margin-bottom: 0.8;
+}
+
+.widget .widget-title::before
+{
+	background-color: #49dccd;
+	content: "";
+	display: block;
+	height: 3px;
+	bottom: -50px;
+	position: relative;
+	width: 70%;
+	
+}
+
+.widget ul
+{
+	margin-left: 0;
+	padding-left: 0;
+}
+
+.widget ul li 
+{
+	list-style: none;
+}
+
+/*iconos --------------------------------*/
+.widget ul li ::before
+{
+	margin-right: 0.5em;
+	display: inline-block;
+	font-style: normal;
+	font-variant: normal;
+	text-rendering:auto ;
+	-webkit-font-smoothing: antialiased;
+}
+/*---falta agregar iconos--------------------*/
+/*--------------fin de los iconos------------*/
+
+.widget ul li a
+{
+	color:#232323;
+	font-size: 0.9em;
+}
+
+
 .widget {
 	margin: 0 0 1.5em;
 }
