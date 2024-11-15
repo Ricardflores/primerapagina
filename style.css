@@ -875,13 +875,13 @@ a.btn-leer-mas:hover
 	font-weight: bold;
 }
 
-/*---------datos del post, autor, fecha -----------*/
-.entry-meta, .entry-meta a
+/*---------datos del post, autor, etiquetas, fecha -----------*/
+.entry-meta,.entry_footer, .entry-meta a, .entry_footer a
 {
 	color:#232323
 }
 
-.entry-meta a
+.entry-meta a, .entry_footer a
 {
 	font-weight: bold;
 }
@@ -927,6 +927,13 @@ a.btn-leer-mas:hover
 }
 
 /*iconos --------------------------------*/
+.widget ul li::before
+{
+	font-family: "Font Awesome 5 Free"; 
+	font-weight: 900;
+	content:"\f00c";
+}
+
 .widget ul li ::before
 {
 	margin-right: 0.5em;
@@ -941,7 +948,7 @@ a.btn-leer-mas:hover
 
 .widget ul li a
 {
-	color:#232323;
+	color:#49dccd;
 	font-size: 0.9em;
 }
 
