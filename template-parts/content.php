@@ -41,8 +41,18 @@
 			echo '<a class="float-right btn-leer-mas btn btn-primary " href="'. get_permalink($post->ID) . '">'. __('Read More', 'Primerapagina') . '></a>';
 		else: 
 		the_content( sprintf(
-				wp_kses(
-					__('Continue reading<span class="screen-reader-text"> "%s"</span>', 'primerapagina' ),
+			wp_kses(
+					__('Continue reading<span class="screen-reader-text"> "%s"</span>',
+					'primerapagina' ),
+					array(
+						'a' => array(
+							'href' => array(),
+							'title' => array()
+						),
+						'br' => array(),
+						'em' => array(),
+						'strong' => array(),
+					)
 				),
 				wp_kses_post( get_the_title() )
 			)
