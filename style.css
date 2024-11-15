@@ -837,6 +837,36 @@ font-weight: 800;
 	margin: 0 0 1.5em;
 }
 
+a.btn-leer-mas
+{
+	color: #49dccd ;
+	background-color: #232323;
+	border-color: #49dccd;
+}
+
+a.btn-leer-mas:hover
+{
+	color: #232323 ;
+	background-color:#49dccd ;
+	border-color: #232323;
+}
+/*------------texto sobre image------------*/
+.container_img_post 
+{
+	position: relative;
+
+}
+.text-block-img
+{
+	position: absolute;
+	bottom: 20px;
+	right: 20px;
+	background-color: black;
+	color: white;
+	padding-left: 20px;
+	padding-right: 20px;
+  
+}
 /* Comments
 --------------------------------------------- */
 .comment-content a {

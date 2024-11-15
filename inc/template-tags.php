@@ -132,7 +132,7 @@ if ( ! function_exists( 'primerapagina_post_thumbnail' ) ) :
 			</div><!-- .post-thumbnail -->
 
 		<?php else : ?>
-
+		<div class="container_img_post">
 			<a class="post-thumbnail" href="<?php the_permalink(); ?>" aria-hidden="true" tabindex="-1">
 				<?php
 					the_post_thumbnail(
@@ -148,7 +148,12 @@ if ( ! function_exists( 'primerapagina_post_thumbnail' ) ) :
 					);
 				?>
 			</a>
+			<div class="text-block-img">
+			categoria
+ 			 </div>
 
+
+		</div><!-- container img ---> 
 			<?php
 		endif; // End is_singular().
 	}
