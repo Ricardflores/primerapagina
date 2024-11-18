@@ -1048,6 +1048,16 @@ a.btn-leer-mas:hover
 	display: block;
 }
 
+.site-footer
+{
+	background-color: #232323;
+	color:white
+}
+
+.site-footer .widget ul li a 
+{
+	color:white
+}
 /*--------------------------------------------------------------
 # Plugins
 --------------------------------------------------------------*/

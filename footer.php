@@ -13,32 +13,35 @@
 	</div> <!--row -->
 	</div><!-- content container--> 
 
-			<footer id="colophon" class="site-footer container-fluid">
+			<footer id="colophon" class="site-footer">
+				<div class="container">
+				<div class="row">
+						<div class="col-md-4">
+						<div id="footer 1" class="widget-area">
+							<?php 
+								dynamic_sidebar( 'footer 1' ); 
+							?>
+						</div>
 
-					<div class="row">
 						<div class="col-md-4">
-						<div id="Footer 1" class="widget-area">
+						<div id="footer 2" class="widget-area">
 							<?php 
-								dynamic_sidebar( 'Footer 1' ); 
+								dynamic_sidebar( 'footer 2' ); 
 							?>
 						</div>
-						<div id="Footer 2" class="widget-area">
+
+						<div class="col-md-4">
+						<div id="footer 3" class="widget-area">
 							<?php 
-								dynamic_sidebar( 'Footer 2' ); 
+								dynamic_sidebar( 'footer 3' ); 
 							?>
-						</div>
-						<div class="col-md-4">
-							<h4>Hola estoy vacio</h4>
-						</div>
-						<div class="col-md-4">
-							
 						</div>
 
 					</div>    <!-----row-------->
+				</div>        <!-----fin container-------->
 
 
-
-
+				
 				<div class="site-info">
 					<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'primerapagina' ) ); ?>">
 						<?php
@@ -51,9 +54,11 @@
 						/* translators: 1: Theme name, 2: Theme author. */
 						printf( esc_html__( 'Theme: %1$s by %2$s.', 'primerapagina' ), 'primerapagina', '<a href="http://underscores.me/">Underscores.me</a>' );
 						?>
+						
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
-</div><!-- #page -->
+</div><!-- #page --> 
+
 
 <?php wp_footer(); ?>
 
