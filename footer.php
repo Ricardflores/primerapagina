@@ -30,6 +30,13 @@
 							?>
 						</div>
 
+
+						<div class="col-md-4">
+						<div id="footer 3" class="widget-area">
+							<?php 
+								dynamic_sidebar( 'footer 3' ); 
+							?>
+						</div>
 					</div>    <!-----row-------->
 
 					<div class="site-info row ">

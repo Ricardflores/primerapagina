@@ -535,7 +535,7 @@ table {
 /* Links
 --------------------------------------------- */
 a {
-	color: #4169e1;
+	color: #49dccd;
 }
 
 a:visited {
@@ -897,10 +897,20 @@ a.btn-leer-mas:hover
 
 /* Widgets
 --------------------------------------------- */
+.widget
+{
+	margin: 0 0 1.5em;
+}
+
+.widget select
+{
+	max-width: 100%;
+}
+
 .widget .widget-title
 {
 	font-size: 1.8em;
-	margin-bottom: 0.8;
+	margin-bottom: 0.8em;
 }
 
 .widget .widget-title::before
@@ -927,14 +937,18 @@ a.btn-leer-mas:hover
 }
 
 /*iconos --------------------------------*/
-.widget ul li::before
+.widget_pages ul li::before, .widget_categories ul li::before, .widget_archive ul li::before, li.recentcomments::before
+, .widget_meta li::before
 {
+	color: #232323;
 	font-family: "Font Awesome 5 Free"; 
 	font-weight: 900;
+	font-size: 0.8em;
 	content:"\f00c";
 }
 
-.widget ul li ::before
+.widget_pages ul li ::before, .widget_categories ul li::before, .widget_archive ul li::before, .widget_meta ul li::before
+, li.recentcomments::before
 {
 	margin-right: 0.5em;
 	display: inline-block;
@@ -945,13 +959,44 @@ a.btn-leer-mas:hover
 }
 /*---falta agregar iconos--------------------*/
 /*--------------fin de los iconos------------*/
+/*widget tag------*/
+#secondary .tagcloud a
+{
+	color: #49dccd;
+}
+/*------ widget menu -----*/
+#secondary .menu ul li a 
+{
+	color: white;
+	margin-left: 0.5em;
+}
+
+
+#secondary .tagcloud a:hover
+{
+	color: #232323;
+}
 
 .widget ul li a
 {
 	color:#49dccd;
 	font-size: 0.9em;
 }
+/*--------------widget seach-----*/
+.seach-submit, input[type="submit"]
+{
+	color: #49dccd;
+	background-color: #232323;
+	border-color: #232323;
+	padding: 10px 15px 8px 15px;
+}
 
+input[type="submit"]:hover
+{
+	color: #232323;
+	background-color: #49dccd;
+	border-color: #49dccd;
+}
 
 .widget {
 	margin: 0 0 1.5em;
