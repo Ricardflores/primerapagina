@@ -10,7 +10,7 @@
  */
 
 ?>
-	</div> <!--row -->
+
 	</div><!-- content container--> 
 
 			<footer id="colophon" class="site-footer row">
@@ -21,8 +21,8 @@
 							<?php 
 								dynamic_sidebar( 'footer 1' ); 
 							?>
-						</div>
-
+					
+				<div class="row">
 						<div class="col-md-4">
 						<div id="footer 2" class="widget-area">
 							<?php 
@@ -37,7 +37,7 @@
 								dynamic_sidebar( 'footer 3' ); 
 							?>
 						</div>
-					</div>    <!-----row-------->
+				</div>    <!-----row-------->
 
 					<div class="site-info row ">
 						<div class="col-md-12 text-center">

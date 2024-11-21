@@ -887,6 +887,7 @@ a.btn-leer-mas:hover
 }
 /* Comments
 --------------------------------------------- */
+
 .comment-content a {
 	word-wrap: break-word;
 }
@@ -895,6 +896,51 @@ a.btn-leer-mas:hover
 	display: block;
 }
 
+.comment
+{
+	border: 1px solid #232323;
+	border-radius: 5px;
+	margin: 0 0 15px 5px;
+	padding: 20px 10px;
+}
+.comment-autor
+{
+	display: inline-block;
+}
+.comment-metadata
+{	
+	display: inline-block;
+}
+
+.comment-autor a, .comment-metadata a
+{
+	color:#232323;
+}
+.comment-content
+{
+	margin-top: 1em;
+}
+
+.reply
+{
+	margin-bottom: 50px;
+}
+
+
+.reply a
+{
+	background: #49dccd;
+	padding: 10px 20px;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-o-border-radius: 5px;
+	float:right;
+}
+.reply a:hover
+{
+	background: #232323;
+}
 /* Widgets
 --------------------------------------------- */
 .widget
