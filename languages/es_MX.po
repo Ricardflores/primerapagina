@@ -1,14 +1,13 @@
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: primerapagina\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-11-25 18:30+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: \n"
-"Language: \n"
-"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"PO-Revision-Date: 2024-11-25 19:04+0000\n"
+"Last-Translator: \n"
+"Language-Team: Español de México\n"
+"Language: es_MX\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -19,27 +18,27 @@ msgstr ""
 #. used between list items, there is a space after the comma
 #: inc/template-tags.php:150
 msgid ", "
-msgstr ""
+msgstr "."
 
 #: functions.php:138
 msgid "Add widgets here Footer Zone 1."
-msgstr ""
+msgstr "Añade widgets aquí Zona de pie de página 1."
 
 #: functions.php:150
 msgid "Add widgets here Footer Zone 2."
-msgstr ""
+msgstr "Añade widgets aquí Zona de pie de página 2."
 
 #: functions.php:162
 msgid "Add widgets here Footer Zone 3."
-msgstr ""
+msgstr "Añade widgets aquí Zona de pie de página 3."
 
 #: functions.php:127
 msgid "Add widgets here."
-msgstr ""
+msgstr "Añade widgets aquí "
 
 #: comments.php:69
 msgid "Comments are closed."
-msgstr ""
+msgstr "Fin de comentarios."
 
 #. 1: comment count number, 2: title.
 #: comments.php:41
@@ -47,35 +46,35 @@ msgstr ""
 msgctxt "comments title"
 msgid "%1$s thought on &ldquo;%2$s&rdquo;"
 msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%1$s sobre &ldquo;%2$s&rdquo;"
+msgstr[1] "%1$s acerca de &ldquo;%2$s&rdquo;"
 
 #: template-parts/content.php:45
 #, php-format
 msgid "Continue reading<span class=\"screen-reader-text\"> \"%s\"</span>"
-msgstr ""
+msgstr "Continua leyendo<span class=\"screen-reader-text\"> \"%s\"</span>"
 
 #. Description of the theme
 msgid "Description"
-msgstr ""
+msgstr "Descripcion"
 
 #. %s: Name of current post. Only visible to screen readers
 #: inc/template-tags.php:96 template-parts/content-page.php:39
 #, php-format
 msgid "Edit <span class=\"screen-reader-text\">%s</span>"
-msgstr ""
+msgstr "Editar <span class=\"screen-reader-text\">%s</span>"
 
 #: functions.php:136
 msgid "Footer -Zone 1"
-msgstr ""
+msgstr "Pie de pagina -Zona 1"
 
 #: functions.php:148
 msgid "Footer -Zone 2"
-msgstr ""
+msgstr "Pie de pagina -Zona 2"
 
 #: functions.php:160
 msgid "Footer -Zone 3"
-msgstr ""
+msgstr "Pie de pagina -Zona 3"
 
 #. URI of the theme
 #. Author URI of the theme
@@ -91,18 +90,20 @@ msgid ""
 "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
 "searching can help."
 msgstr ""
+"Parece que no se encontro lo que buscas&rsquo;t intenta&rsquo;re buscar con "
+"otras palabras. Quizas esto puede interesarte"
 
 #. %s: post title
 #: inc/template-tags.php:79
 #, php-format
 msgid "Leave a Comment<span class=\"screen-reader-text\"> on %s</span>"
-msgstr ""
+msgstr "Deja un comentario<span class=\"screen-reader-text\"> on %s</span>"
 
 #. used between list items, there is a space after the comma
 #: inc/template-tags.php:66
 msgctxt "list item separator"
 msgid ", "
-msgstr ""
+msgstr "."
 
 #: 404.php:38
 msgid "Most Used Categories"
@@ -110,17 +111,17 @@ msgstr ""
 
 #: template-parts/content-none.php:14
 msgid "Nothing Found"
-msgstr ""
+msgstr "No se encontro"
 
 #. 1: title.
 #: comments.php:35
 #, php-format
 msgid "One thought on &ldquo;%1$s&rdquo;"
-msgstr ""
+msgstr "Hecho en  &ldquo;%1$s&rdquo;"
 
 #: template-parts/content-page.php:25 template-parts/content.php:65
 msgid "Pages:"
-msgstr ""
+msgstr "Paginas:"
 
 #: 404.php:17
 msgid "Pagina no encontrada"
@@ -135,28 +136,28 @@ msgstr ""
 #, php-format
 msgctxt "post author"
 msgid "by %s"
-msgstr ""
+msgstr "Por %s"
 
 #. %s: post date.
 #: inc/template-tags.php:30
 #, php-format
 msgctxt "post date"
 msgid "Posted on %s"
-msgstr ""
+msgstr "Publicado el %s"
 
 #. 1: list of categories.
 #: inc/template-tags.php:153
 #, php-format
 msgid "Posted in %1$s"
-msgstr ""
+msgstr "Publicado en %1$s"
 
 #: functions.php:54
 msgid "Primary"
-msgstr ""
+msgstr "Principal"
 
 #: header.php:52
 msgid "Primary Menu"
-msgstr ""
+msgstr "Menu Principal"
 
 #. Name of the theme
 msgid "primerapagina"
@@ -166,56 +167,58 @@ msgstr ""
 #: footer.php:47
 #, php-format
 msgid "Proudly powered by %s"
-msgstr ""
+msgstr "Creado por %s"
 
 #: template-parts/content.php:41
 msgid "Read More"
-msgstr ""
+msgstr "Leer mas"
 
 #. 1: link to WP admin new post page.
 #: template-parts/content-none.php:24
 #, php-format
 msgid ""
 "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
-msgstr ""
+msgstr "Listo para publicar tu primer post? <a href=\"%1$s\">Inicia aqui</a>."
 
 #. %s: search query.
 #: search.php:21
 #, php-format
 msgid "Search Results for: %s"
-msgstr ""
+msgstr "Buscando resultados por: %s"
 
 #: functions.php:125
 msgid "Sidebar"
-msgstr ""
+msgstr "Barra lateral"
 
 #: header.php:26
 msgid "Skip to content"
-msgstr ""
+msgstr "Siguiente contenido"
 
 #: template-parts/content-none.php:37
 msgid ""
 "Sorry, but nothing matched your search terms. Please try again with some "
 "different keywords."
 msgstr ""
+"Lo sentimos no pudimos encontrar lo que buscas. Intenta con diferentes "
+"palabras"
 
 #. 1: list of tags.
 #: inc/template-tags.php:69
 #, php-format
 msgid "Tagged %1$s"
-msgstr ""
+msgstr "Etiqueta %1$s"
 
 #. 1: Theme name, 2: Theme author.
 #: footer.php:53
 #, php-format
 msgid "Theme: %1$s by %2$s."
-msgstr ""
+msgstr "Tema: %1$s by %2$s."
 
 #. %1$s: smiley
 #: 404.php:56
 #, php-format
 msgid "Try looking in the monthly archives. %1$s"
-msgstr ""
+msgstr "Intenta buscar en otros archivos. %1$s"
 
 #. Author of the theme
 msgid "Underscores.me"
