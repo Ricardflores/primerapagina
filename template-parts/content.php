@@ -38,7 +38,7 @@
 	<?php
 		if (! is_singular()):
 			the_excerpt();
-			echo '<a class="float-right btn-leer-mas btn btn-primary " href="'. get_permalink($post->ID) . '">'. __('Read More', 'Primerapagina') . '></a>';
+			echo '<a class="float-right btn-leer-mas btn btn-primary " href="'. get_permalink($post->ID) . '">'. __('Read More', 'primerapagina') . '></a>';
 		else: 
 		the_content( sprintf(
 			wp_kses(
