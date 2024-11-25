@@ -220,7 +220,7 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
 
-/*function Comentario_personalizado_comment_form_defaults( $fields)
+/* function Comentario_personalizado_comment_form_defaults( $fields)
 {
 	$html_req=null;
 	 $html5=null;

@@ -4,7 +4,7 @@
  *
  * You can add an optional custom header image to header.php like so ...
  *
-	<?php the_header_image_tag(); ?>
+
  *
  * @link https://developer.wordpress.org/themes/functionality/custom-headers/
  *
@@ -76,3 +76,4 @@ if ( ! function_exists( 'primerapagina_header_style' ) ) :
 		<?php
 	}
 endif;
+?>
