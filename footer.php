@@ -11,7 +11,7 @@
 
 ?>
 
-	</div><!-- content container--> 
+</div><!-- content container--> 
 
 			<footer id="colophon" class="site-footer row">
 				<div class="container">
@@ -37,10 +37,10 @@
 								dynamic_sidebar( 'footer 3' ); 
 							?>
 						</div>
-				</div>    <!-----row-------->
+
 
 					<div class="site-info row ">
-						<div class="col-md-12 text-center">
+						<div class="col-md- text-center">
 							<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'primerapagina' ) ); ?>">
 						<?php
 								/* translators: %s: CMS name, i.e. WordPress. */
@@ -55,7 +55,7 @@
 
 						</div>
 
-						
+		
 		</div><!-- .site-info -->
 
 				</div>        <!-----fin container-------->
