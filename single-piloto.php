@@ -25,7 +25,7 @@
 					<i class="fab fa-pinterest-square fa-2x"></i>
 					<i class="fab fa-youtube-square fa-2x"></i>
 				</div>
-
+				
 				<div class="col-md-8 detalle_piloto">
 					<header class="entry-header"> 
 					<?php
@@ -74,6 +74,7 @@
 	</div>
 	</main><!-- #main -->
 	</div><!-- #primary -->
+	<br>
 <?php
 
 get_footer();

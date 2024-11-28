@@ -39,7 +39,7 @@
 						</div>
 
 
-					<div class="site-info row ">
+					<div class="site-info row">
 						<div class="col-md- text-center">
 							<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'primerapagina' ) ); ?>">
 						<?php
@@ -56,14 +56,14 @@
 						</div>
 
 		
-		</div><!-- .site-info -->
+					</div><!-- .site-info -->
 
 				</div>        <!-----fin container-------->
 
 
 				
 
-	</footer><!-- #colophon -->
+			</footer><!-- #colophon -->
 </div><!-- #page --> 
 
 
