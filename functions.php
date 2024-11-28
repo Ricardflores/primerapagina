@@ -316,7 +316,12 @@ function my_cmb2_boxes() {
         'id'         => $prefix . 'campeonatos',
         'type'       => 'text',
     ) );
-git
+
+	$cmb->add_field( array(
+        'name'       => __( 'Escuderia', 'http://primerapagina.local/' ),
+        'id'         => $prefix . 'Escuderia',
+        'type'       => 'text',
+    ) );
     // ... Agrega más campos aquí ...
 
 }
