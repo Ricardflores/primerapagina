@@ -16,8 +16,7 @@
 
 	<?php primerapagina_post_thumbnail(); ?>
 
-	<div class="entry-content">
-		<?php
+	<?php
 		the_content();
 
 		wp_link_pages(
