@@ -20,31 +20,25 @@
 				<div class="col-md-4">
 					<?php 
 					primerapagina_post_thumbnail(); ?>
-					<i class="fab fa-facebook-square fa-2x"></i>
-					<i class="fab fa-twitter-square fa-2x"></i>
-					<i class="fab fa-pinterest-square fa-2x"></i>
-					<i class="fab fa-youtube-square fa-2x"></i>
+					<a href="a"><i class="fab fa-facebook-square fa-2x"></i></a>
+					<a href="a"><i class="fab fa-twitter-square fa-2x"></i></a>
+					<a href="a"><i class="fab fa-pinterest-square fa-2x"></i></a>
+					<a href="a"><i class="fab fa-youtube-square fa-2x"></i></a>
 				</div>
 				
 				<div class="col-md-8 detalle_piloto">
 					<header class="entry-header"> 
 					<?php
 							the_title( '<h1 class="entry-title">', '</h1>' );
+							the_content();
 					?>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore ab itaque debitis recusandae officiis.
-						Facilis reprehenderit alias, qui sapiente consectetur recusandae voluptate reiciendis fugiat nesciunt veniam 
-						animi, quis ipsam impedit.</p>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore ab itaque debitis recusandae officiis.
-						Facilis reprehenderit alias, qui sapiente consectetur recusandae voluptate reiciendis fugiat nesciunt veniam 
-						animi, quis ipsam impedit.</p>
-						
+					
 					<h3 class="entry-title">Perfil del piloto</h3>
-
-					<span>Nombre:</span> Max Emilian Verstappen <br/>
-					<span>Edad:</span> 27 años <br/>
-					<span>Nacionalidad:</span> Neerlandes <br/>
-					<span>Campeonatos Mundiales:</span> 4 <br/>
-					<span>Escuderia:</span> Oracle Red Bull Racing <br/>
+					<span>Nombre:</span> <?php echo get_post_meta( get_the_ID( ), 'my_prefix_Nombre_piloto', true ); ?> <br/>
+					<span>Edad:</span> <?php echo get_post_meta( get_the_ID( ), 'my_prefix_Edad_piloto', true ); ?> <br/>
+					<span>Nacionalidad:</span> <?php echo get_post_meta( get_the_ID( ), 'my_prefix_Nacionalidad_piloto', true ); ?> <br/>
+					<span>Campeonatos Mundiales:</span> <?php echo get_post_meta( get_the_ID( ), 'my_prefix_campeonatos_piloto', true ); ?>  <br/>
+					<span>Escuderia:</span> <?php echo get_post_meta( get_the_ID( ), 'my_prefix_Escuderia_piloto', true ); ?>  <br/>
 				</div>
 			</div>
 

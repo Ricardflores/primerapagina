@@ -1251,8 +1251,36 @@ input[type="submit"]:hover
 	margin-top: 0px;
 	text-transform: capitalize;
 }
+.piloto h3
+{
+	margin: 1em 0 1em 0;
+}
+.single-piloto p
+{
+	margin-bottom: 0.5em;
+}
+
 .detalle_piloto span
 {
 	font-weight: bold;
 	color: #232323
 }
+.piloto h3 ::before
+{
+	background-color: #49dccd;
+	content: "";
+	display: block;
+	height: 3px;
+	bottom: -48px;
+	position: relative;
+	width: 70%;
+
+}
+.entry-title::after {
+	content: '';
+	display: block;
+	width: 60%;
+	height: 7px;
+	background-color: #49dccd; /* Adjust color as needed */
+	margin-top: 0px;
+  }
