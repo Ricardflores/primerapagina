@@ -61,8 +61,37 @@
 					<div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
   						<div class="progress-bar" style="width: 100%">100%</div>
 					</div>
-
+			
 				</div>
+
+			</div>
+			<div class="row">
+				<div class="col-md-12">
+					<h3 class="entry-title">galeria del piloto</h3>
+				</div>
+				<?php
+				$galeria =  get_post_meta( get_the_ID(), 'galeria_piloto', true );
+				foreach ($galeria as $imagen) :
+					//var_dump( $imagen );
+					?>
+					<div class="col-md-4">
+						ñ
+						<img src="<?php echo $imagen ?>" alt="MDN" />
+					</div>
+					<?php
+				endforeach;
+
+
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				?>
 			</div>
 
 	</div>
@@ -72,4 +101,4 @@
 <?php
 
 get_footer();
-?>
+
