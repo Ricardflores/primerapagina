@@ -44,22 +44,30 @@
 
 			<div class="row">
 			<div class="col-md-12">
-				<h3 class="entry-title">Habilidades</h3>
+				<h3 class="entry-title"><?php echo get_post_meta( get_the_ID( ), 'Habilidades_HabilidadesT', true ); ?> <br/></h3>
+				
 			</div>	
 			</div>	
 			<div class="row">
 				<div class="col-md-12">
 					<p>Manejo</p>
-					<div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
-  						<div class="progress-bar" style="width: 85%">85%</div>
+					<div>
+					<div  class="progress" role="progressbar"  aria-label="Example with label" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" >
+						<div>
+							 <?php echo get_post_meta( get_the_ID( ), 'Habilidades_Porcentaje_1', true ); ?> 
+						</div>
 					</div>
 					<p>Gestion de Neumaticos</p>
-					<div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
-  						<div class="progress-bar" style="width: 75%">75%</div>
+					<div  class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" >
+						<div> 
+							<?php echo get_post_meta( get_the_ID( ), 'Habilidades_Porcentaje_2', true ); ?> 
+						</div>
 					</div>
 					<p>Compañerismo</p>
-					<div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
-  						<div class="progress-bar" style="width: 100%">100%</div>
+					<div  class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" >
+						<div> 
+							<?php echo get_post_meta( get_the_ID( ), 'Habilidades_Porcentaje_3', true ); ?> 
+						</div>
 					</div>
 			
 				</div>
@@ -67,15 +75,16 @@
 			</div>
 			<div class="row">
 				<div class="col-md-12">
-					<h3 class="entry-title">galeria del piloto</h3>
+					<h3 class="entry-title"><?php echo get_post_meta( get_the_ID( ), 'galeriati_Titulo_galeria', true ); ?> 
+					</h3>
 				</div>
-				<?php
+				<?php 
 				$galeria =  get_post_meta( get_the_ID(), 'galeria_piloto', true );
 				foreach ($galeria as $imagen) :
 					//var_dump( $imagen );
 					?>
 					<div class="col-md-4">
-						ñ
+						
 						<img src="<?php echo $imagen ?>" alt="MDN" />
 					</div>
 					<?php
