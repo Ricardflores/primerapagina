@@ -1284,3 +1284,16 @@ input[type="submit"]:hover
 	background-color: #49dccd; /* Adjust color as needed */
 	margin-top: 0px;
   }
+
+  .Enlaces_sociales a i
+  {
+	color: #f71709;
+  }
+  .Enlaces_sociales a i:hover
+  {
+	color: #49dccd;
+  }
+  .Enlaces_sociales a 
+  {
+	margin-right: 0.2em;
+  }
