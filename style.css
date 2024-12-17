@@ -1,8 +1,8 @@
 /*!
 Theme Name: primerapagina
-Theme URI: http://underscores.me/
+Theme URI: http://primerapagina.local/
 Author: Underscores.me
-Author URI: http://underscores.me/
+Author URI: http://primerapagina.local/
 Description: Description
 Version: 1.0.0
 Tested up to: 5.4
@@ -403,17 +403,19 @@ select,
 optgroup,
 textarea {
 	color: #404040;
-	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+	font-family: "Lato", sans-serif;
 	font-size: 1rem;
 	line-height: 1.5;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1, css {font-size: 2.4em;}
+h2,css {font-size: 2.2em;}
+h3,css {font-size: 2em;}
+h4,css {font-size: 1.8em;}
+h5,css {font-size: 1.6em;}
+h6,css {font-size: 1.4em;}
+
+h1,h2,h3,h4,h5,h6{
 	clear: both;
 }
 
@@ -533,7 +535,7 @@ table {
 /* Links
 --------------------------------------------- */
 a {
-	color: #4169e1;
+	color: #49dccd;
 }
 
 a:visited {
@@ -647,6 +649,10 @@ textarea {
 
 /* Navigation
 --------------------------------------------- */
+.site-header{
+
+	background-color: #232323;
+} 
 .main-navigation {
 	display: block;
 	width: 100%;
@@ -657,15 +663,18 @@ textarea {
 	list-style: none;
 	margin: 0;
 	padding-left: 0;
+	
 }
 
-.main-navigation ul ul {
+.main-navigation ul ul a 
+{
 	box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
 	float: left;
 	position: absolute;
 	top: 100%;
 	left: -999em;
 	z-index: 99999;
+	line-height: 25px;
 }
 
 .main-navigation ul ul ul {
@@ -681,6 +690,7 @@ textarea {
 
 .main-navigation ul ul a {
 	width: 200px;
+	
 }
 
 .main-navigation ul li:hover > ul,
@@ -695,7 +705,37 @@ textarea {
 .main-navigation a {
 	display: block;
 	text-decoration: none;
+	color:#fff;
+	text-transform: uppercase;
+	padding: 0px 0, 3em;
+	text-align: end;
+	line-height: 90px;
+	height: 100px;
 }
+
+/*----------menu desplegable-------------*/
+
+ul.sub-menu 
+{
+	background-color: #232323;
+}
+.page_item_has_children ul.children {
+	
+    background-color: #232323;
+}
+a:hover, li:hover > a, .current-menu-item > a, .ancestor-menu-item > a  { 
+	color:#49dccd
+}
+
+
+/*---------flecha para indicar hijos---*/
+
+ul.sub-menu .menu-item-has-children > a::before {
+	right: 2px;
+	border-top-color: transparent;
+	border-left-color: #ee1f87;
+}
+
 
 /* Small menu. */
 .menu-toggle,
@@ -713,6 +753,17 @@ textarea {
 		display: flex;
 	}
 }
+
+/*-------------------------------------------------------------------------------------------
+/*brandig*/
+
+
+.site-branding a {
+color:#49dccd;
+font-family:'montserrat', sans-serif;
+font-weight: 800;
+}
+
 
 .site-main .comment-navigation,
 .site-main
@@ -740,9 +791,30 @@ textarea {
 	text-align: end;
 	flex: 1 0 50%;
 }
+/*------------------------------------------
+#content
+------------------------------------------*/
+.site-content
+{
+	margin-top: 3em;
+}
 
 /* Posts and pages
 --------------------------------------------- */
+.entry-title
+{
+	font-family: "Montserrat", sans-serif;
+	font-weight: 800;
+	color: #232323;
+	margin: top 1em; ;
+}
+.entry-title a 
+{
+	color: #232323;
+	
+}
+
+
 .sticky {
 	display: block;
 }
@@ -767,8 +839,57 @@ textarea {
 	margin: 0 0 1.5em;
 }
 
+a.btn-leer-mas
+{
+	color: #49dccd ;
+	background-color: #232323;
+	border-color: #49dccd;
+}
+
+a.btn-leer-mas:hover
+{
+	color: #232323 ;
+	background-color:#49dccd ;
+	border-color: #232323;
+}
+/*------------texto sobre image------------*/
+.container_img_post 
+{
+	position: relative;
+
+}
+.text-block-img
+{
+	border-radius: 2px 0px 2px 0px;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	background-color: #49dccd;
+	color: #232323;
+	padding-left: 20px;
+	padding-right: 20px;
+  
+}
+
+.text-block-img a 
+{
+	color: #232323;
+	font-weight: bold;
+}
+
+/*---------datos del post, autor, etiquetas, fecha -----------*/
+.entry-meta,.entry_footer, .entry-meta a, .entry_footer a
+{
+	color:#232323
+}
+
+.entry-meta a, .entry_footer a
+{
+	font-weight: bold;
+}
 /* Comments
 --------------------------------------------- */
+
 .comment-content a {
 	word-wrap: break-word;
 }
@@ -777,8 +898,154 @@ textarea {
 	display: block;
 }
 
+.comment
+{
+	border: 1px solid #232323;
+	border-radius: 5px;
+	margin: 0 0 15px 5px;
+	padding: 20px 10px;
+}
+.comment-autor
+{
+	display: inline-block;
+}
+.comment-metadata
+{	
+	display: inline-block;
+}
+
+.comment-autor a, .comment-metadata a
+{
+	color:#232323;
+}
+.comment-content
+{
+	margin-top: 1em;
+}
+
+.reply
+{
+	margin-bottom: 50px;
+}
+
+
+.reply a
+{
+	background: #49dccd;
+	padding: 10px 20px;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-o-border-radius: 5px;
+	float:right;
+}
+.reply a:hover
+{
+	background: #232323;
+}
 /* Widgets
 --------------------------------------------- */
+.widget
+{
+	margin: 0 0 1.5em;
+}
+
+.widget select
+{
+	max-width: 100%;
+}
+
+.widget .widget-title
+{
+	font-size: 1.8em;
+	margin-bottom: 0.8em;
+}
+
+.widget .widget-title::before
+{
+	background-color: #49dccd;
+	content: "";
+	display: block;
+	height: 3px;
+	bottom: -50px;
+	position: relative;
+	width: 70%;
+	
+}
+
+.widget ul
+{
+	margin-left: 0;
+	padding-left: 0;
+}
+
+.widget ul li 
+{
+	list-style: none;
+}
+
+/*iconos --------------------------------*/
+.widget_pages ul li::before, .widget_categories ul li::before, .widget_archive ul li::before, li.recentcomments::before
+, .widget_meta li::before
+{
+	color: #232323;
+	font-family: "Font Awesome 5 Free"; 
+	font-weight: 900;
+	font-size: 0.8em;
+	content:"\f00c";
+}
+
+.widget_pages ul li ::before, .widget_categories ul li::before, .widget_archive ul li::before, .widget_meta ul li::before
+, li.recentcomments::before
+{
+	margin-right: 0.5em;
+	display: inline-block;
+	font-style: normal;
+	font-variant: normal;
+	text-rendering:auto ;
+	-webkit-font-smoothing: antialiased;
+}
+/*---falta agregar iconos--------------------*/
+/*--------------fin de los iconos------------*/
+/*widget tag------*/
+#secondary .tagcloud a
+{
+	color: #49dccd;
+}
+/*------ widget menu -----*/
+#secondary .menu ul li a 
+{
+	color: white;
+	margin-left: 0.5em;
+}
+
+
+#secondary .tagcloud a:hover
+{
+	color: #232323;
+}
+
+.widget ul li a
+{
+	color:#49dccd;
+	font-size: 0.9em;
+}
+/*--------------widget seach-----*/
+.seach-submit, input[type="submit"]
+{
+	color: #49dccd;
+	background-color: #232323;
+	border-color: #232323;
+	padding: 10px 15px 8px 15px;
+}
+
+input[type="submit"]:hover
+{
+	color: #232323;
+	background-color: #49dccd;
+	border-color: #49dccd;
+}
+
 .widget {
 	margin: 0 0 1.5em;
 }
@@ -874,6 +1141,16 @@ textarea {
 	display: block;
 }
 
+.site-footer
+{
+	background-color: #232323;
+	color:white
+}
+
+.site-footer .widget ul li a 
+{
+	color:white
+}
 /*--------------------------------------------------------------
 # Plugins
 --------------------------------------------------------------*/
@@ -966,4 +1243,100 @@ textarea {
 	margin-left: auto;
 	margin-right: auto;
 	margin-bottom: 1.5em;
+}
+
+/*------------ pilotos------*/
+.piloto h1 
+{
+	margin-top: 0px;
+	text-transform: capitalize;
+}
+.piloto h3
+{
+	margin: 1em 0 1em 0;
+}
+.single-piloto p
+{
+	margin-bottom: 0.5em;
+}
+
+.detalle_piloto span
+{
+	font-weight: bold;
+	color: #232323
+}
+.piloto h3 ::before
+{
+	background-color: #49dccd;
+	content: "";
+	display: block;
+	height: 3px;
+	bottom: -48px;
+	position: relative;
+	width: 70%;
+
+}
+.entry-title::after {
+	content: '';
+	display: block;
+	width: 60%;
+	height: 7px;
+	background-color: #49dccd; /* Adjust color as needed */
+	margin-top: 0px;
+  }
+
+  .Enlaces_sociales a i
+  {
+	color: #f71709;
+  }
+  .Enlaces_sociales a i:hover
+  {
+	color: #49dccd;
+  }
+  .Enlaces_sociales a 
+  {
+	margin-right: 0.2em;
+  }
+
+/*----------------- clases pilotos-------------*/
+.practica1 
+{
+	background: #232323;
+	color: #e6e6e6;
+	border:1px solid #49dccd ;
+	padding: 10px 5px;
+	text-align: center;
+	margin: 0px 2px;
+}
+.practica2 
+{
+	background: #49dccd;
+	color: #232323;
+	border:1px solid #232323;
+	padding: 10px 5px;
+	text-align: center;
+	margin: 0px 2px;
+}
+.datos_maestro_kart_clase 
+{
+	margin-top: 10px;
+}
+.datos_maestro_kart_clase h3
+{
+	margin-top: 10px;
+	text-align: center;
+}
+.datos_maestro_kart_clase p
+{
+	text-align: center;
+	margin-bottom: 4px;
+}
+.iconos_sociales_kart a
+{
+	color: 232323;
+	margin: 6px;
+}
+.iconos_sociales_kart :hover
+{
+	color: #f71709;
 }

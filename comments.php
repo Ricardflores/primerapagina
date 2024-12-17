@@ -52,6 +52,7 @@ if ( post_password_required() ) {
 			<?php
 			wp_list_comments(
 				array(
+					'avatar_size' => 64,
 					'style'      => 'ol',
 					'short_ping' => true,
 				)
@@ -72,6 +73,7 @@ if ( post_password_required() ) {
 	endif; // Check for have_comments().
 
 	comment_form();
+	
 	?>
 
 </div><!-- #comments -->

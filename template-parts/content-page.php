@@ -8,6 +8,21 @@
  */
 
 ?>
+<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+	<header class="breadcrumb__area breadcrumb-height p-relative grey-bg">
+	</header>
+
+	<div class="entry-content">
+	</div>
+
+	<p class="text-center">
+		<?php
+		echo get_post_meta ( get_the_ID (  ), 'my_first_metabox_custom_text_field', true);
+		?>
+	</p>
+</article>   <?php the_ID(); ?>
+
+
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header">
@@ -16,8 +31,7 @@
 
 	<?php primerapagina_post_thumbnail(); ?>
 
-	<div class="entry-content">
-		<?php
+	<?php
 		the_content();
 
 		wp_link_pages(
