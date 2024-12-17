@@ -1297,3 +1297,46 @@ input[type="submit"]:hover
   {
 	margin-right: 0.2em;
   }
+
+/*----------------- clases pilotos-------------*/
+.practica1 
+{
+	background: #232323;
+	color: #e6e6e6;
+	border:1px solid #49dccd ;
+	padding: 10px 5px;
+	text-align: center;
+	margin: 0px 2px;
+}
+.practica2 
+{
+	background: #49dccd;
+	color: #232323;
+	border:1px solid #232323;
+	padding: 10px 5px;
+	text-align: center;
+	margin: 0px 2px;
+}
+.datos_maestro_kart_clase 
+{
+	margin-top: 10px;
+}
+.datos_maestro_kart_clase h3
+{
+	margin-top: 10px;
+	text-align: center;
+}
+.datos_maestro_kart_clase p
+{
+	text-align: center;
+	margin-bottom: 4px;
+}
+.iconos_sociales_kart a
+{
+	color: 232323;
+	margin: 6px;
+}
+.iconos_sociales_kart :hover
+{
+	color: #f71709;
+}
