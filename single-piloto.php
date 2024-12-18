@@ -21,10 +21,10 @@
 					<?php 
 					primerapagina_post_thumbnail('piloto-single', ['class' => 'rounded'] ); ?>
 					<div class="Enlaces_sociales">
-						<a href="a <?php echo esc_attr( get_post_meta( get_the_ID( ), 'Redes_Red_piloto1', true )); ?>" target="_blank" ><i class="fab fa-facebook-square fa-2x"></i></a>
-						<a href="a <?php echo esc_attr(get_post_meta( get_the_ID( ), 'Redes_Red_piloto2', true )); ?>" ><i class="fab fa-twitter-square fa-2x"></i></a>
-						<a href="a <?php echo esc_attr(get_post_meta( get_the_ID( ), 'Redes_Red_piloto3', true )); ?>" ><i class="fab fa-pinterest-square fa-2x"></i></a>
-						<a href="a <?php echo esc_attr(get_post_meta( get_the_ID( ), 'Redes_Red_piloto4', true )); ?>" ><i class="fab fa-youtube-square fa-2x"></i></a>
+						<a href="<?php echo esc_attr(get_post_meta( get_the_ID( ), 'Redes_Red_piloto1', true )); ?>" target="_blank" ><i class="fab fa-facebook-square fa-2x"></i></a>
+						<a href="<?php echo esc_attr(get_post_meta( get_the_ID( ), 'Redes_Red_piloto2', true )); ?>" ><i class="fab fa-twitter-square fa-2x"></i></a>
+						<a href="<?php echo esc_attr(get_post_meta( get_the_ID( ), 'Redes_Red_piloto3', true )); ?>" ><i class="fab fa-pinterest-square fa-2x"></i></a>
+						<a href="<?php echo esc_attr(get_post_meta( get_the_ID( ), 'Redes_Red_piloto4', true )); ?>" ><i class="fab fa-youtube-square fa-2x"></i></a>
 					</div>
 				</div>
 				

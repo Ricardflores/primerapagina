@@ -1340,3 +1340,15 @@ input[type="submit"]:hover
 {
 	color: #f71709;
 }
+.leer_mas_maestro 
+{
+	background: #49dccd;
+	color: #232323 !important;
+	padding: 10px;
+	border-radius: 5px;
+}
+.leer_mas_maestro :hover
+{
+	background: #232323;
+	color: #49dccd;
+}

@@ -50,9 +50,7 @@
 				the_content();
 			?>
 			<p class="d-flex justify-content-center">
-				Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore maiores, deserunt, 
-				molestiae beatae harum rerum praesentium eligendi atque ad voluptatem consequuntur laudantium, 
-				rem enim quibusdam cupiditate natus adipisci nostrum corporis!
+			<?php echo esc_html(get_post_meta( get_the_ID( ), 'descp_descripcion', true )); ?>
 			</p>
 		</div><!--fin del col-md -->
 	</div><!--fin del row -->
@@ -62,13 +60,16 @@
 	<div class="container text-center">
   		<div class="row">
     		<div class="col practica1">
-				<?php echo get_post_meta( get_the_ID( ), 'horario_karting1', true ); ?>
+				<?php echo esc_html(get_post_meta( get_the_ID( ), 'horarios_horario_karting1', true )); ?> <br>
+				<?php echo esc_html(get_post_meta( get_the_ID( ), 'horarios_precio1', true )); ?>
 			</div>
 			<div class="col practica2">
-				Miercoles 3:40pm <br> $500 por carrera
+				<?php echo esc_html(get_post_meta( get_the_ID( ), 'horarios_horario_karting2', true )); ?> <br>
+				<?php echo esc_html(get_post_meta( get_the_ID( ), 'horarios_precio2', true )); ?>
 			</div>
 			<div class="col practica1">
-				Viernes 12:30 <br> $500 y 2 por 1 en clase
+				<?php echo esc_html(get_post_meta( get_the_ID( ), 'horarios_horario_karting3', true )); ?> <br>
+				<?php echo esc_html(get_post_meta( get_the_ID( ), 'horarios_precio3', true )); ?>
 			</div>
 		</div><!--fin del ROW-->
 	</div><!--fin del CONTAINER-->
@@ -81,15 +82,18 @@
 			<img src="<?php echo get_template_directory_uri(  );?>/img/sergio2.png">
 		</div>
 		<div class="col-md-4 flex ">
-			<p><h1 class="datos_maestro_kart_clase">Maestro clase 1</h1></p>
-			<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero repudiandae, 
-				harum explicabo numquam iste ipsum fugit rem sint dicta facere dignissimos 
-				totam soluta aliquid porro recusandae! Neque tempora modi vero.
-			</p>
+			<h1 class="datos_maestro_kart_clase">Maestro clase 1</h1><br>
+				<?php echo esc_html(get_post_meta( get_the_ID( ), 'campo_descripcion', true )); ?>
 			<div class="d-flex justify-content-center iconos_sociales_kart">
 			<a href="a <?php echo esc_attr( get_post_meta( get_the_ID( ), 'Red_karting1', true )); ?>" target="_blank" ><i class="fab fa-facebook-square fa-2x"></i></a>
 			<a href="a <?php echo esc_attr(get_post_meta( get_the_ID( ), 'Red_karting2', true )); ?>" ><i class="fab fa-twitter-square fa-2x"></i></a>
-			<a href="a <?php echo esc_attr(get_post_meta( get_the_ID( ), 'Red_karting3', true )); ?>" ><i class="fab fa-pinterest-square fa-2x"></i></a>				<a href="a <?php echo esc_attr(get_post_meta( get_the_ID( ), 'Redes_Red_piloto4', true )); ?>" ><i class="fab fa-youtube-square fa-2x"></i></a>
+			<a href="a <?php echo esc_attr(get_post_meta( get_the_ID( ), 'Red_karting3', true )); ?>" ><i class="fab fa-pinterest-square fa-2x"></i></a>				
+			<a href="a <?php echo esc_attr(get_post_meta( get_the_ID( ), 'Red_karting4', true )); ?>" ><i class="fab fa-youtube-square fa-2x"></i></a>
+			</div>
+			<div class="d-flex justify-content-center">
+				<a class="leer_mas_maestro"href="http://primerapagina.local/piloto/sergio-perez/">
+					Mas info....
+				</a>
 			</div>
 		</div>
 	</div>
