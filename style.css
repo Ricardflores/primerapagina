@@ -1319,22 +1319,22 @@ input[type="submit"]:hover
 }
 .datos_maestro_kart_clase 
 {
-	margin-top: 10px;
+	margin-top: 30px;
 }
 .datos_maestro_kart_clase h3
 {
-	margin-top: 10px;
+	margin-top: 20px;
 	text-align: center;
 }
 .datos_maestro_kart_clase p
 {
 	text-align: center;
-	margin-bottom: 4px;
+	margin-bottom: 5px;
 }
 .iconos_sociales_kart a
 {
 	color: 232323;
-	margin: 6px;
+	margin: 4px;
 }
 .iconos_sociales_kart :hover
 {

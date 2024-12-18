@@ -22,9 +22,9 @@
 					primerapagina_post_thumbnail('piloto-single', ['class' => 'rounded'] ); ?>
 					<div class="Enlaces_sociales">
 						<a href="a <?php echo esc_attr( get_post_meta( get_the_ID( ), 'Redes_Red_piloto1', true )); ?>" target="_blank" ><i class="fab fa-facebook-square fa-2x"></i></a>
-						<a href="a <?php echo get_post_meta( get_the_ID( ), 'Redes_Red_piloto2', true ); ?>" ><i class="fab fa-twitter-square fa-2x"></i></a>
-						<a href="a <?php echo get_post_meta( get_the_ID( ), 'Redes_Red_piloto3', true ); ?>" ><i class="fab fa-pinterest-square fa-2x"></i></a>
-						<a href="a <?php echo get_post_meta( get_the_ID( ), 'Redes_Red_piloto4', true ); ?>" ><i class="fab fa-youtube-square fa-2x"></i></a>
+						<a href="a <?php echo esc_attr(get_post_meta( get_the_ID( ), 'Redes_Red_piloto2', true )); ?>" ><i class="fab fa-twitter-square fa-2x"></i></a>
+						<a href="a <?php echo esc_attr(get_post_meta( get_the_ID( ), 'Redes_Red_piloto3', true )); ?>" ><i class="fab fa-pinterest-square fa-2x"></i></a>
+						<a href="a <?php echo esc_attr(get_post_meta( get_the_ID( ), 'Redes_Red_piloto4', true )); ?>" ><i class="fab fa-youtube-square fa-2x"></i></a>
 					</div>
 				</div>
 				
@@ -40,16 +40,16 @@
 					<?php echo esc_html( get_post_meta( get_the_ID( ), 'my_prefix_Nombre_piloto', true )); ?>
 					<br/>
 					<span>Edad:</span> 
-					<?php echo get_post_meta( get_the_ID( ), 'my_prefix_Edad_piloto', true ); ?> 
+					<?php echo esc_html(get_post_meta( get_the_ID( ), 'my_prefix_Edad_piloto', true )); ?> 
 					<br/>
 					<span>Nacionalidad:</span> 
-					<?php echo get_post_meta( get_the_ID( ), 'my_prefix_Nacionalidad_piloto', true ); ?> 
+					<?php echo esc_html(get_post_meta( get_the_ID( ), 'my_prefix_Nacionalidad_piloto', true )); ?> 
 					<br/>
 					<span>Campeonatos Mundiales:</span> 
-					<?php echo get_post_meta( get_the_ID( ), 'my_prefix_campeonatos_piloto', true ); ?>  
+					<?php echo esc_html(get_post_meta( get_the_ID( ), 'my_prefix_campeonatos_piloto', true )); ?>  
 					<br/>
 					<span>Escuderia:</span> 
-					<?php echo get_post_meta( get_the_ID( ), 'my_prefix_Escuderia_piloto', true ); ?>  
+					<?php echo esc_html(get_post_meta( get_the_ID( ), 'my_prefix_Escuderia_piloto', true )); ?>  
 					<br/>
 					<span>Especialidades:</span> 
 					<?php
@@ -103,7 +103,7 @@
 			</div>
 			<div class="row">
 				<div class="col-md-12">
-					<h3 class="entry-title"><?php echo get_post_meta( get_the_ID( ), 'galeriati_Titulo_galeria', true ); ?> 
+					<h3 class="entry-title"><?php echo esc_html(get_post_meta( get_the_ID( ), 'galeriati_Titulo_galeria', true )); ?> 
 					</h3>
 				</div>
 				<?php 
