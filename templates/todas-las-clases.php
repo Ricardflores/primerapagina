@@ -30,8 +30,6 @@ get_header();
 			<div class="row">
 				<div class="col-md-12">
 					<div class="button-group filters-button-group">
-						<button class="button is-checked" data-filter="*">show all</button>
-						<button class="button" data-filter=".metal">metal</button>
 						<button class="button" data-filter=".transition">transition</button>
 						<button class="button" data-filter=".alkali, .alkaline-earth">alkali and alkaline-earth</button>
 						<button class="button" data-filter=":not(.transition)">not transition</button>
@@ -43,24 +41,27 @@ get_header();
 			</div>
 
 
-
 			<div class="row">
 				<div class="col-md-12">
-					<?php $terms = get_terms( 'Categoria_karting' );
-					if ( ! empty( $terms ) && ! is_wp_error( $terms ) ){
-						echo '<ul></ul>';
-						foreach ( $terms as $term ) {
-							echo '<li></li>' . $term->name . '<li></li>';
+					<div class="button-group filters-button-group">
+						<button class="button is-checked" data-filter="*">Mostrar todos</button>
+						<?php $terms = get_terms( 'Categoria_karting' );
+							if ( ! empty( $terms ) && ! is_wp_error( $terms ) ){
+								echo '<ul></ul>';
+								foreach ( $terms as $term ) {
+									
+									echo '<button class="button" data-filter="' .$terms->slug.'">' . $term->name . '</button>';
 
 
-						}
-						echo '<ul></ul>';
-					}
-					
-					
-					?>
-				</div>
-			</div>
+								}
+								echo '<ul></ul>';
+							}
+						
+						
+						?>
+					</div> <!-- fin de botton group  -->
+				</div> <!-- fin col md 12 -->
+			</div><!-- fin row  -->
 
 
 
