@@ -83,7 +83,9 @@
 		</div>
 		<div class="col-md-4 flex ">
 			<h1 class="datos_maestro_kart_clase">Maestro clase 1</h1><br>
-				<?php ?>
+
+
+
 
 
 
@@ -112,6 +114,5 @@
 	</div><!-- #primary -->
 	<br>
 <?php
-
 get_footer();
 
