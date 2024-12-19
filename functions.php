@@ -180,6 +180,8 @@ function primerapagina_scripts() {
 	wp_enqueue_style('font_awesome', 'https://use.fontawesome.com/releases/v5.0.6/css/all.css', false);
 	wp_enqueue_style( 'primerapagina-style', get_stylesheet_uri(), array(), _S_VERSION );
 	wp_enqueue_style( 'bootstrap',get_template_directory_uri(  ) . '/css/bootstrap.min.css', array(), _S_VERSION );
+	wp_enqueue_style( 'primarapagina-isotopes',get_template_directory_uri(  ) . '/js/isotope.pkgd.min.js', array(), _S_VERSION );
+	wp_enqueue_style( 'primarapagina-isotopes',get_template_directory_uri(  ) . '/js/iniciar_js_primerapagina.js', array(), _S_VERSION );
 
 
 

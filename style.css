@@ -1352,3 +1352,16 @@ input[type="submit"]:hover
 	background: #232323;
 	color: #49dccd;
 }
+/* --------------------------todas las clases--------------------*/
+.las_clases 
+{
+	background-color: #49dccd;
+	color: #232323;
+	text-align: center;
+	padding: 7px;
+	margin-top: 5px;
+	box-shadow: 2px 3px 1px #000;
+	text-transform: uppercase;
+	font-size: 1.5em;
+
+}
