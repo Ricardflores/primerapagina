@@ -29,18 +29,40 @@ get_header();
 
 			<div class="row">
 				<div class="col-md-12">
-				<div class="button-group filters-button-group">
-					<button class="button is-checked" data-filter="*">show all</button>
-					<button class="button" data-filter=".metal">metal</button>
-					<button class="button" data-filter=".transition">transition</button>
-					<button class="button" data-filter=".alkali, .alkaline-earth">alkali and alkaline-earth</button>
-					<button class="button" data-filter=":not(.transition)">not transition</button>
-					<button class="button" data-filter=".metal:not(.transition)">metal but not transition</button>
-					<button class="button" data-filter="numberGreaterThan50">number > 50</button>
-					<button class="button" data-filter="ium">name ends with &ndash;ium</button>
-				</div>
+					<div class="button-group filters-button-group">
+						<button class="button is-checked" data-filter="*">show all</button>
+						<button class="button" data-filter=".metal">metal</button>
+						<button class="button" data-filter=".transition">transition</button>
+						<button class="button" data-filter=".alkali, .alkaline-earth">alkali and alkaline-earth</button>
+						<button class="button" data-filter=":not(.transition)">not transition</button>
+						<button class="button" data-filter=".metal:not(.transition)">metal but not transition</button>
+						<button class="button" data-filter="numberGreaterThan50">number > 50</button>
+						<button class="button" data-filter="ium">name ends with &ndash;ium</button>
+					</div>
 				</div>
 			</div>
+
+
+
+			<div class="row">
+				<div class="col-md-12">
+					<?php $terms = get_terms( 'Categoria_karting' );
+					if ( ! empty( $terms ) && ! is_wp_error( $terms ) ){
+						echo '<ul></ul>';
+						foreach ( $terms as $term ) {
+							echo '<li></li>' . $term->name . '<li></li>';
+
+
+						}
+						echo '<ul></ul>';
+					}
+					
+					
+					?>
+				</div>
+			</div>
+
+
 
 
 
@@ -69,21 +91,22 @@ get_header();
 					<?php the_title( '<h2 class="las_clases">' , '</h2>' ); ?>
 				</div>
 
-				<?php 
-					$galeria =  get_post_meta( get_the_ID(), 'kartgalery_kartingg', true );
-					if($galeria): 
-					foreach ($galeria as $imagen) :
-				?>
-		
+				<div class="col-md-3 element-item transition metal" data-category="transition">	
+					<?php 
+						$galeria =  get_post_meta( get_the_ID(), 'kartgalery_kartingg', true );
+						if($galeria): 
+						foreach ($galeria as $imagen) :
+					?>
+							
 					<img src="<?php echo $imagen ?>" alt="MDN" />
+				</div>
 
+					<?php
+						endforeach;
+						endif;			
+						endwhile; 
+					?>
 
-				<?php
-					endforeach;
-					endif;			
-					endwhile; 
-				?>
-		
 				<?php // final del ciclo  
 					wp_reset_postdata(); 
 				?>
@@ -96,7 +119,6 @@ get_header();
 					</p>
 
 				<?php endif; ?>
-
 			</div>
 		
 		</article>
