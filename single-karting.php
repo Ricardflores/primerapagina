@@ -47,7 +47,7 @@
 		<div class="col-md-12">
 			<?php  
 				the_title( '<h1 class="entry-tittle">' , '</h1>' );
-				the_content();
+				echo esc_html( get_post_meta( get_the_ID( ), 'campo2_descripcion_karting', true ));
 			?>
 			<p class="d-flex justify-content-center">
 			<?php echo esc_html(get_post_meta( get_the_ID( ), 'descp_descripcion', true )); ?>
@@ -83,15 +83,19 @@
 		</div>
 		<div class="col-md-4 flex ">
 			<h1 class="datos_maestro_kart_clase">Maestro clase 1</h1><br>
+				<?php ?>
+
+
+
 				<?php echo esc_html(get_post_meta( get_the_ID( ), 'campo_descripcion', true )); ?>
 			<div class="d-flex justify-content-center iconos_sociales_kart">
-			<a href="a <?php echo esc_attr( get_post_meta( get_the_ID( ), 'Red_karting1', true )); ?>" target="_blank" ><i class="fab fa-facebook-square fa-2x"></i></a>
-			<a href="a <?php echo esc_attr(get_post_meta( get_the_ID( ), 'Red_karting2', true )); ?>" ><i class="fab fa-twitter-square fa-2x"></i></a>
-			<a href="a <?php echo esc_attr(get_post_meta( get_the_ID( ), 'Red_karting3', true )); ?>" ><i class="fab fa-pinterest-square fa-2x"></i></a>				
-			<a href="a <?php echo esc_attr(get_post_meta( get_the_ID( ), 'Red_karting4', true )); ?>" ><i class="fab fa-youtube-square fa-2x"></i></a>
+			<a href="<?php echo esc_attr( get_post_meta( get_the_ID( ), 'Red_karting1', true )); ?>" target="_blank" ><i class="fab fa-facebook-square fa-2x"></i></a>
+			<a href="<?php echo esc_attr(get_post_meta( get_the_ID( ), 'Red_karting2', true )); ?>" ><i class="fab fa-twitter-square fa-2x"></i></a>
+			<a href="<?php echo esc_attr(get_post_meta( get_the_ID( ), 'Red_karting3', true )); ?>" ><i class="fab fa-pinterest-square fa-2x"></i></a>				
+			<a href="<?php echo esc_attr(get_post_meta( get_the_ID( ), 'Red_karting4', true )); ?>" ><i class="fab fa-youtube-square fa-2x"></i></a>
 			</div>
 			<div class="d-flex justify-content-center">
-				<a class="leer_mas_maestro"href="http://primerapagina.local/piloto/sergio-perez/">
+				<a class="leer_mas_maestro" href="http://primerapagina.local/piloto/sergio-perez/">
 					Mas info....
 				</a>
 			</div>
